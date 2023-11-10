@@ -1,0 +1,40 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+:root {
+  --navbarcolor: rgba(0, 0, 0, 0.783);
+  --text-color: #fff;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  padding-top: 36px;
+  padding-left: 164px;
+  width: 1440px;
+  height: 108px;
+  background-color: var(--navbarcolor);
+  color: #fff;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
+nav ul li {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  padding-left: 10px;
+}
+nav ul li a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-decoration: none;
+  color: var(--text-color);
+}
