@@ -8,15 +8,20 @@
   --text-color: #fff;
 }
 
+body {
+  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
 nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 10px;
-  padding-top: 36px;
-  padding-left: 164px;
-  width: 1440px;
-  height: 108px;
+  padding-top: px;
+  padding-left: 125px;
+  height: 54px;
   background-color: var(--navbarcolor);
   color: #fff;
 }
@@ -36,5 +41,26 @@ nav ul li a {
   flex-direction: row;
   justify-content: space-between;
   text-decoration: none;
+  color: var(--text-color);
+  margin: auto;
+}
+
+.cart {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+}
+
+.logo-nav {
+  width: 50px;
+}
+
+.h1-nav {
+  margin: auto;
+  position: relative;
+}
+
+.nav-brand {
+  display: flex;
   color: var(--text-color);
 }
