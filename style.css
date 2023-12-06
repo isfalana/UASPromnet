@@ -39,6 +39,7 @@ nav {
   position: fixed;
   width: 100%;
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.783);
+  z-index: 1;
 }
 nav ul {
   display: flex;
@@ -154,6 +155,40 @@ nav ul li .nav-a:hover::after {
   border-radius: 25px;
 }
 
+.btn-carousel {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nextBtn,
+#prevBtn {
+  cursor: pointer;
+  background: transparent;
+  font-size: 100px;
+  padding: 10px;
+  padding-left: 200px;
+  padding-right: 200px;
+  border: none;
+  color: var(--text-color);
+}
+
+/* #next-Btn:target ~ .corusel {
+  margin-right: 100%;
+}
+#prev-Btn:target ~ .corusel {
+  margin-left: 100%;
+} */
+
+#nextBtn:focus,
+#prevBtn:focus {
+  outline: none;
+}
 .navigation-corusel {
   position: absolute;
   margin-left: auto;
@@ -183,10 +218,37 @@ nav ul li .nav-a:hover::after {
   font-weight: 900; */
 }
 
+.div-offer .h1-buy {
+  opacity: 0;
+  transform: translate(0, 80px);
+  transition: all ease-in 0.8s;
+}
+.div-offer .text-buy {
+  opacity: 0;
+  transform: translate(0, 80px);
+  transition: all ease-in 0.8s;
+}
+.div-offer .h1-buy.ada {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.div-offer .text-buy.ada {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
 .btn-offer {
   margin-right: 100px;
   margin-top: auto;
   margin-bottom: auto;
+  opacity: 0;
+  transform: translate(0, 80px);
+  transition: all ease-in 0.8s;
+}
+
+.btn-offer.ada {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 /* button */
@@ -234,6 +296,14 @@ nav ul li .nav-a:hover::after {
   margin-left: auto;
   margin-bottom: 80px;
   padding-top: 80px;
+  opacity: 0;
+  transform: translate(0, 80px);
+  transition: all ease-in 0.8s;
+}
+
+.h1-about.ada {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .container {
@@ -252,6 +322,14 @@ nav ul li .nav-a:hover::after {
   margin-bottom: auto;
   width: 50%;
   border-radius: 10px;
+  opacity: 0;
+  transform: translate(-100px, 0);
+  transition: all ease-in 0.8s;
+}
+
+.img-about.ada {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .about-paragraph {
@@ -260,6 +338,14 @@ nav ul li .nav-a:hover::after {
   padding-bottom: 10px;
   margin-bottom: 20px;
   width: 370px;
+  opacity: 0;
+  transform: translate(100px, 0);
+  transition: all ease-in 0.8s;
+}
+
+.about-paragraph.ada {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .paragraph {
@@ -268,6 +354,14 @@ nav ul li .nav-a:hover::after {
 
 .p-about {
   padding-right: 100px;
+  opacity: 0;
+  transform: translate(100px, 0);
+  transition: all ease-in 0.8s;
+}
+
+.p-about.ada {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 /* Menu */
@@ -285,6 +379,14 @@ nav ul li .nav-a:hover::after {
   margin-right: auto;
   margin-left: auto;
   padding-top: 80px;
+  opacity: 0;
+  transform: translate(0, 80px);
+  transition: all ease-in 0.8s;
+}
+
+.h1-menu.ada {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 /* card menu */
@@ -313,7 +415,19 @@ nav ul li .nav-a:hover::after {
   background-color: #f8fbfe;
   border-radius: 8px;
   margin: 20px;
-  box-shadow: 4px 4px 20px rgba(0, 0, 0, 1);
+  opacity: 0;
+  transform: translate(0, -100px);
+  transition: all ease 0.4s;
+}
+
+.card:hover {
+  box-shadow: 4px 4px 30px rgba(0, 0, 0, 1);
+  margin: 10px;
+}
+
+.card.ada {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .tools {
@@ -415,6 +529,14 @@ nav ul li .nav-a:hover::after {
   margin-right: auto;
   margin-left: auto;
   padding-top: 80px;
+  opacity: 0;
+  transform: translate(0, 100px);
+  transition: all ease-in 0.8s;
+}
+
+.h1-contact.ada {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 /* Contact Us */
@@ -451,6 +573,14 @@ nav ul li .nav-a:hover::after {
   padding-top: 30px;
   padding-left: 30px;
   padding-bottom: 30px;
+  opacity: 0;
+  transform: translate(100px, 0);
+  transition: all ease-in 0.8s;
+}
+
+.judul.ada {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .instagram svg {
@@ -463,14 +593,48 @@ nav ul li .nav-a:hover::after {
 .instagram {
   padding-left: 20px;
   height: 50px;
+  opacity: 0;
+  transform: translate(-100px, 0);
+  transition: all ease-in 0.8s;
 }
 
-.wa {
+.instagram.ada {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.wa1 {
   padding-left: 20px;
   height: 50px;
+  opacity: 0;
+  transform: translate(100px, 0);
+  transition: all ease-in 0.8s;
+}
+.wa2 {
+  padding-left: 20px;
+  height: 50px;
+  opacity: 0;
+  transform: translate(-100px, 0);
+  transition: all ease-in 0.8s;
 }
 
-.wa svg {
+.wa1.ada {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.wa2.ada {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.wa1 svg {
+  padding-right: 5px;
+  width: 40px;
+  height: 50px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.wa2 svg {
   padding-right: 5px;
   width: 40px;
   height: 50px;
@@ -481,6 +645,14 @@ nav ul li .nav-a:hover::after {
 .email {
   padding-left: 20px;
   height: 50px;
+  opacity: 0;
+  transform: translate(100px, 0);
+  transition: all ease-in 0.8s;
+}
+
+.email.ada {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .email svg {
