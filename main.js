@@ -14,6 +14,20 @@
 
 // div1Observer.observe(div1Element);
 
+// side bar
+const hamburger = document.getElementById("hamburger-menu");
+const menu = document.querySelector("#nav-li");
+
+hamburger.addEventListener("click", (e) => {
+  menu.classList.toggle("ada");
+});
+
+document.addEventListener("click", (e) => {
+  if (!hamburger.contains(e.target) && !menu.contains(e.target)) {
+    menu.classList.remove("ada");
+  }
+});
+
 //show the carousel
 document.addEventListener("DOMContentLoaded", function () {
   var corusel = document.querySelector(".corusel");
@@ -114,16 +128,16 @@ $(window).scroll(function () {
   if (wScroll > $(".contactus").offset().top - 250) {
     $(".judul").addClass("ada");
   }
-  if (wScroll > $(".contactus").offset().top - 200) {
+  if (wScroll > $(".contactus").offset().top - 100) {
     $(".instagram").addClass("ada");
   }
-  if (wScroll > $(".contactus").offset().top - 150) {
+  if (wScroll > $(".contactus").offset().top - 80) {
     $(".wa1").addClass("ada");
   }
-  if (wScroll > $(".contactus").offset().top - 100) {
+  if (wScroll > $(".contactus").offset().top - 60) {
     $(".wa2").addClass("ada");
   }
-  if (wScroll > $(".contactus").offset().top - 50) {
+  if (wScroll > $(".contactus").offset().top - 40) {
     $(".email").addClass("ada");
   }
 
@@ -135,3 +149,5 @@ $(window).scroll(function () {
     });
   }
 });
+
+// class active
