@@ -509,6 +509,7 @@ nav ul li .nav-a:hover::after {
 
 .img-card {
   width: 150px;
+  height: 130px;
   padding-left: 25px;
 }
 
