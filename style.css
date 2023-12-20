@@ -848,6 +848,16 @@ footer {
 }
 
 /* Media Queries */
+
+@media (max-width: 1978px) {
+  html {
+    font-size: 125%;
+  }
+
+  .card-place {
+    justify-content: center;
+  }
+}
 /* Laptop */
 @media (max-width: 1366px) {
   html {
@@ -1011,73 +1021,6 @@ footer {
   .footer-text {
     font-size: 15px;
   }
-  /* nav ul li a {
-    margin: 0px;
-  }
-
-  .navbar .navbar-nav a {
-    color: var(--bg);
-    display: block;
-    margin: 1.5rem;
-    padding: 0.5rem;
-    font-size: 2rem;
-  }
-
-  .navbar .navbar-nav a::after {
-    transform-origin: 0 0;
-  }
-
-  .navbar .navbar-nav a:hover::after {
-    transform: scaleX(0.2);
-  }
-
-  .navbar .search-form {
-    width: 90%;
-    right: 2rem;
-  }
-
-  .about .row {
-    flex-wrap: wrap;
-  }
-
-  .about .row .about-img img {
-    height: 24rem;
-    object-fit: cover;
-    object-position: center;
-  }
-
-  .about .row .content {
-    padding: 0;
-  }
-
-  .about .row .content h3 {
-    margin-top: 1rem;
-    font-size: 2rem;
-  }
-
-  .about .row .content p {
-    font-size: 1.6rem;
-  }
-
-  .menu p {
-    font-size: 1.2rem;
-  }
-
-  .contact .row {
-    flex-wrap: wrap;
-  }
-
-  .contact .row .map {
-    height: 30rem;
-  }
-
-  .contact .row form {
-    padding-top: 0;
-  }
-
-  .modal-content {
-    flex-wrap: wrap;
-  } */
 }
 
 /* Mobile Phone */
