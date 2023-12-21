@@ -863,6 +863,11 @@ footer {
   html {
     font-size: 100%;
   }
+
+  .img-slide {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /* Tablet */
