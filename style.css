@@ -142,7 +142,7 @@ nav ul li .nav-a:hover::after {
 
 .img-slide {
   width: 900px;
-  height: 600px;
+  height: auto;
 }
 
 .corusel img {
