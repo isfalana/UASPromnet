@@ -149,5 +149,3 @@ $(window).scroll(function () {
     });
   }
 });
-
-// class active
